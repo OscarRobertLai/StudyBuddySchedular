@@ -2,8 +2,14 @@
   text-align: center;
 }
 
-#drop_zone {
-  border: 5px solid blue;
+.drop-zone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
   width: 800px;
-  height: 500px;
+  height: 300px;
+}
+
+.drop-zone-drag-over {
+  background-color: gray;
 }
