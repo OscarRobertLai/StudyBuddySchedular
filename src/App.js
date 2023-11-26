@@ -21,8 +21,6 @@ export default function App() {
   // Function to parse ICS data
   // \r\n is a carriage return 
   const parseICS = (data) => {
-    const allEvents = [];
-    const uniqueEvents = [];
     const events = [];
     const lines = data.split(/\r\n|\n|\r/);
     let currentEvent = null;
@@ -38,13 +36,6 @@ export default function App() {
         currentEvent[key] = value;
       }
     });
-
-    allEvents.forEach(event => {
-      if (isUniqueEvent(event, uniqueEvents)) {
-        uniqueEvents.push(event);
-      }
-    });
-
     return events;
   };
 
@@ -95,6 +86,19 @@ export default function App() {
   };
 
   const buttonPress = () => {
+    const uniqueEvents = []
+    
+    events.forEach((singleEvent) => {
+      if (isUniqueEvent(singleEvent, uniqueEvents))
+      {
+        uniqueEvents.push(singleEvent);
+      }
+    })
+
+    // Priting out unique events
+    console.log("UNIQUE", uniqueEvents)
+
+    // Printing out unit codes
     const unitCode = events[0].DESCRIPTION.substring(0 , 7)
     console.log(unitCode)
   }
