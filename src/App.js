@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) => 
+
+const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, setUnqiueEvents }) => 
 {
-    // Function to check if an event is unique (NOT IMPLEMENTED YET)
-    const isUniqueEvent = (event, events) => {
-      return !events.some(e => 
-        e.DTSTART === event.DTSTART && 
-        e.DTEND === event.DTEND && 
-        e.SUMMARY === event.SUMMARY
-      );
-    };
-  
     // Function to parse ICS data
     // \r\n is a carriage return 
     const parseICS = (data) => {
@@ -39,29 +31,12 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) =>
       reader.onload = (e) => {
         const content = e.target.result;
         const parsedEvents = parseICS(content);
-        setEvents(parsedEvents); // Update state with parsed events
+        setEvents([...events, ...parsedEvents]);
         console.log('Parsed Events: ', parsedEvents);
       };
       reader.readAsText(file);
     };
   
-  const buttonPress = () => {
-    const uniqueEvents = []
-    
-    events.forEach((singleEvent) => {
-      if (isUniqueEvent(singleEvent, uniqueEvents))
-      {
-        uniqueEvents.push(singleEvent);
-      }
-    })
-
-    // Priting out unique events
-    console.log("UNIQUE", uniqueEvents)
-
-    // Printing out unit codes
-    const unitCode = events[0].DESCRIPTION.substring(0 , 7)
-    console.log(unitCode)
-  }
     // Update the drag over handler
     const dragOverHandler = (event) => {
       event.preventDefault();
@@ -106,19 +81,60 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) =>
         className={`drop-zone ${isDragOver ? 'drop-zone-drag-over' : ''}`}>
         <p>Drag one or more files to this <i>drop zone</i>.</p>
       </div>
-      <button onClick={buttonPress}>Press Me</button>
+      
     </div>
   );
 }
 
-export default function App ()
-  { 
+const TestButton = ({ uniqueEvents, setUnqiueEvents, events }) => {
+  const getUniqueEventsByName = (events) => {
+    const uniqueEvents = [];
+    const seenSummaries = new Set();
+  
+    events.forEach(event => {
+      if (!seenSummaries.has(event.SUMMARY)) {
+        seenSummaries.add(event.SUMMARY);
+        uniqueEvents.push(event);
+      }
+    });
+  
+    return uniqueEvents;
+  };
+
+  // Run thhis code on the button press
+  const buttonPress = () => {
+    const newUniqueEvents = getUniqueEventsByName(events);  
+    setUnqiueEvents([...uniqueEvents, ...newUniqueEvents]);
+  };
+
+  return <button onClick={buttonPress}>Press Me</button>;
+  
+};
+
+
+export default function App (){ 
     const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
     const [events, setEvents] = useState([]);
+    const [uniqueEvents, setUnqiueEvents] = useState([]);
 
     return (
-      <DropBox events={events} setEvents={setEvents} isDragOver={isDragOver} setIsDragOver={setIsDragOver} />
-    )
+      <div>
+        <DropBox 
+          events={events}
+          setEvents={setEvents}
+          isDragOver={isDragOver}
+          setIsDragOver={setIsDragOver}
+          uniqueEvents={uniqueEvents}
+          setUnqiueEvents={setUnqiueEvents} 
+        />
+        <TestButton 
+          uniqueEvents={uniqueEvents}
+          setUnqiueEvents={setUnqiueEvents}
+          events={events}
+        />
+      </div>
+    );
+
   }
   
   
