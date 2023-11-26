@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 export default function App() {
   const [events, setEvents] = useState([]);
   const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
 
-  const t1 = `LINE 1
-LINE 2
-LINE 3`
-
-  console.log(t1.split(/\r\n/))
-
+  useEffect(() => {
+    // console.log("MASHED POTATOS")
+  }, [events]);
+  
   // Function to check if an event is unique (NOT IMPLEMENTED YET)
   const isUniqueEvent = (event, events) => {
     return !events.some(e => 
@@ -23,6 +21,8 @@ LINE 3`
   // Function to parse ICS data
   // \r\n is a carriage return 
   const parseICS = (data) => {
+    const allEvents = [];
+    const uniqueEvents = [];
     const events = [];
     const lines = data.split(/\r\n|\n|\r/);
     let currentEvent = null;
@@ -36,6 +36,12 @@ LINE 3`
       } else if (currentEvent) {
         const [key, value] = line.split(':');
         currentEvent[key] = value;
+      }
+    });
+
+    allEvents.forEach(event => {
+      if (isUniqueEvent(event, uniqueEvents)) {
+        uniqueEvents.push(event);
       }
     });
 
@@ -55,10 +61,12 @@ LINE 3`
   };
 
   // Handler for dropping files
-  const dropHandler = (event) => {
+  const dropHandler = (event) => 
+  {
     event.preventDefault();
     setIsDragOver(false); // Reset background color when file is dropped
 
+    // Looping through each file and outputting to the console for now
     if (event.dataTransfer.items) {
       for (let i = 0; i < event.dataTransfer.items.length; i++) {
         if (event.dataTransfer.items[i].kind === 'file') {
@@ -86,19 +94,28 @@ LINE 3`
     setIsDragOver(false); // Reset background color when item leaves the drop zone
   };
 
+  const buttonPress = () => {
+    const unitCode = events[0].DESCRIPTION.substring(0 , 7)
+    console.log(unitCode)
+  }
+
   return (
-    <div
-      id="drop_zone"
-      onDrop={dropHandler}
-      onDragOver={dragOverHandler}
-      onDragLeave={dragLeaveHandler}
-      style={{
-        border: '2px dashed #ccc',
-        padding: '20px',
-        textAlign: 'center',
-        backgroundColor: isDragOver ? 'gray' : 'transparent' // Change background color based on isDragOver state
-      }}>
-      <p>Drag one or more files to this <i>drop zone</i>.</p>
+    <div>
+      <div
+        id="drop_zone"
+        onDrop={dropHandler}
+        onDragOver={dragOverHandler}
+        onDragLeave={dragLeaveHandler}
+        style={{
+          border: '2px dashed #ccc',
+          padding: '20px',
+          textAlign: 'center',
+          backgroundColor: isDragOver ? 'gray' : 'transparent' // Change background color based on isDragOver state
+        }}>
+        <p>Drag one or more files to this <i>drop zone</i>.</p>
       </div>
+      <button onClick={buttonPress}>Press Me</button>
+    </div>
   );
+  
 }
