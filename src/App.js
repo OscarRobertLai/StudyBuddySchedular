@@ -1,65 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-export default function App() {
-  const [events, setEvents] = useState([]);
-  const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
 
-  useEffect(() => {
-    // console.log("MASHED POTATOS")
-  }, [events]);
+const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, setUnqiueEvents }) => 
+{
+    // Function to parse ICS data
+    // \r\n is a carriage return 
+    const parseICS = (data) => {
+      const events = [];
+      const lines = data.split(/\r\n|\n|\r/);
+      let currentEvent = null;
   
-  // Function to check if an event is unique (NOT IMPLEMENTED YET)
-  const isUniqueEvent = (event, events) => {
-    return !events.some(e => 
-      e.DTSTART === event.DTSTART && 
-      e.DTEND === event.DTEND && 
-      e.SUMMARY === event.SUMMARY
-    );
-  };
-
-  // Function to parse ICS data
-  // \r\n is a carriage return 
-  const parseICS = (data) => {
-    const allEvents = [];
-    const uniqueEvents = [];
-    const events = [];
-    const lines = data.split(/\r\n|\n|\r/);
-    let currentEvent = null;
-
-    lines.forEach(line => {
-      if (line.startsWith('BEGIN:VEVENT')) {
-        currentEvent = {};
-      } else if (line.startsWith('END:VEVENT')) {
-        events.push(currentEvent);
-        currentEvent = null;
-      } else if (currentEvent) {
-        const [key, value] = line.split(':');
-        currentEvent[key] = value;
-      }
-    });
-
-    allEvents.forEach(event => {
-      if (isUniqueEvent(event, uniqueEvents)) {
-        uniqueEvents.push(event);
-      }
-    });
-
-    return events;
-  };
-
-  // Handler for reading and parsing ICS file content
-  const readFileContent = (file) => {
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const content = e.target.result;
-      const parsedEvents = parseICS(content);
-      setEvents(parsedEvents); // Update state with parsed events
-      console.log('Parsed Events: ', parsedEvents);
+      lines.forEach(line => {
+        if (line.startsWith('BEGIN:VEVENT')) {
+          currentEvent = {};
+        } else if (line.startsWith('END:VEVENT')) {
+          events.push(currentEvent);
+          currentEvent = null;
+        } else if (currentEvent) {
+          const [key, value] = line.split(':');
+          currentEvent[key] = value;
+        }
+      });
+      return events;
     };
-    reader.readAsText(file);
-  };
-
+  
+    // Handler for reading and parsing ICS file content
+    const readFileContent = (file) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const content = e.target.result;
+        const parsedEvents = parseICS(content);
+        setEvents([...events, ...parsedEvents]);
+        console.log('Parsed Events: ', parsedEvents);
+      };
+      reader.readAsText(file);
+    };
+  
+    // Update the drag over handler
+    const dragOverHandler = (event) => {
+      event.preventDefault();
+      setIsDragOver(true); // Change background color when item is dragged over
+    };
+  
+    // Handler for when the dragged item leaves the drop zone
+    const dragLeaveHandler = () => {
+      setIsDragOver(false); // Reset background color when item leaves the drop zone
+    };
+  
   // Handler for dropping files
   const dropHandler = (event) => 
   {
@@ -83,22 +71,7 @@ export default function App() {
     }
   };
 
-  // Update the drag over handler
-  const dragOverHandler = (event) => {
-    event.preventDefault();
-    setIsDragOver(true); // Change background color when item is dragged over
-  };
-
-  // Handler for when the dragged item leaves the drop zone
-  const dragLeaveHandler = () => {
-    setIsDragOver(false); // Reset background color when item leaves the drop zone
-  };
-
-  const buttonPress = () => {
-    const unitCode = events[0].DESCRIPTION.substring(0 , 7)
-    console.log(unitCode)
-  }
-
+ 
   return (
     <>
       <div
@@ -106,36 +79,67 @@ export default function App() {
         onDrop={dropHandler}
         onDragOver={dragOverHandler}
         onDragLeave={dragLeaveHandler}
-        style={{
-          border: '2px dashed #ccc',
-          padding: '20px',
-          textAlign: 'center',
-          backgroundColor: isDragOver ? 'gray' : 'transparent' // Change background color based on isDragOver state
-        }}>
+        className={`drop-zone ${isDragOver ? 'drop-zone-drag-over' : ''}`}>
         <p>Drag one or more files to this <i>drop zone</i>.</p>
       </div>
-      <button onClick={buttonPress}>Press Me</button>
 
-      <div 
-      id='main-container'
-      className='float-container'>
-        <div className='float-options'>
-          <p> Test Column 1</p>
-        </div>
-
-        <div className='float-schedule'>
-            <ul className='weekdays'>
-              <li>Time</li>
-              <li>Mon</li>
-              <li>Tue</li>
-              <li>Wed</li>
-              <li>Thur</li>
-              <li>Fri</li>
-              <li>Sat</li>
-              <li>Sun</li>
-            </ul>
-          </div>
-        </div>
-    </>
+      
+    </div>
   );
 }
+
+const TestButton = ({ uniqueEvents, setUnqiueEvents, events }) => {
+  const getUniqueEventsByName = (events) => {
+    const uniqueEvents = [];
+    const seenSummaries = new Set();
+  
+    events.forEach(event => {
+      if (!seenSummaries.has(event.SUMMARY)) {
+        seenSummaries.add(event.SUMMARY);
+        uniqueEvents.push(event);
+      }
+    });
+  
+    return uniqueEvents;
+  };
+
+  // Run thhis code on the button press
+  const buttonPress = () => {
+    const newUniqueEvents = getUniqueEventsByName(events);  
+    setUnqiueEvents([...uniqueEvents, ...newUniqueEvents]);
+  };
+
+  return <button onClick={buttonPress}>Press Me</button>;
+  
+};
+
+
+export default function App (){ 
+    const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
+    const [events, setEvents] = useState([]);
+    const [uniqueEvents, setUnqiueEvents] = useState([]);
+
+    return (
+      <div>
+        <DropBox 
+          events={events}
+          setEvents={setEvents}
+          isDragOver={isDragOver}
+          setIsDragOver={setIsDragOver}
+          uniqueEvents={uniqueEvents}
+          setUnqiueEvents={setUnqiueEvents} 
+        />
+        <TestButton 
+          uniqueEvents={uniqueEvents}
+          setUnqiueEvents={setUnqiueEvents}
+          events={events}
+        />
+      </div>
+    );
+
+  }
+  
+  
+
+
+
