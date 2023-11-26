@@ -100,7 +100,7 @@ export default function App() {
   }
 
   return (
-    <div>
+    <>
       <div
         id="drop_zone"
         onDrop={dropHandler}
@@ -115,7 +115,27 @@ export default function App() {
         <p>Drag one or more files to this <i>drop zone</i>.</p>
       </div>
       <button onClick={buttonPress}>Press Me</button>
-    </div>
+
+      <div 
+      id='main-container'
+      className='float-container'>
+        <div className='float-options'>
+          <p> Test Column 1</p>
+        </div>
+
+        <div className='float-schedule'>
+            <ul className='weekdays'>
+              <li>Time</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thur</li>
+              <li>Fri</li>
+              <li>Sat</li>
+              <li>Sun</li>
+            </ul>
+          </div>
+        </div>
+    </>
   );
-  
 }
