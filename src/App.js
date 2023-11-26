@@ -5,7 +5,13 @@ export default function App() {
   const [events, setEvents] = useState([]);
   const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
 
-  // Function to check if an event is unique 
+  const t1 = `LINE 1
+LINE 2
+LINE 3`
+
+  console.log(t1.split(/\r\n/))
+
+  // Function to check if an event is unique (NOT IMPLEMENTED YET)
   const isUniqueEvent = (event, events) => {
     return !events.some(e => 
       e.DTSTART === event.DTSTART && 
@@ -15,6 +21,7 @@ export default function App() {
   };
 
   // Function to parse ICS data
+  // \r\n is a carriage return 
   const parseICS = (data) => {
     const events = [];
     const lines = data.split(/\r\n|\n|\r/);
