@@ -104,13 +104,15 @@ const TestButton = ({ uniqueEvents, setUnqiueEvents, events }) => {
   // Run thhis code on the button press
   const buttonPress = () => {
     const newUniqueEvents = getUniqueEventsByName(events);  
+    console.log("Unique Lists Log", newUniqueEvents)
     setUnqiueEvents([...uniqueEvents, ...newUniqueEvents]);
   };
+
+  
 
   return <button onClick={buttonPress}>Press Me</button>;
   
 };
-
 
 export default function App (){ 
     const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
