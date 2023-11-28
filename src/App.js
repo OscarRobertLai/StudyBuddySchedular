@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import MyCalendarComponent from "./components/Calendar";
-import UserTable from "./components/DataTable";
 
 
 const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, setUnqiueEvents }) => 
@@ -12,7 +10,7 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, s
       const events = [];
       const lines = data.split(/\r\n|\n|\r/);
       let currentEvent = null;
-
+  
       lines.forEach(line => {
         if (line.startsWith('BEGIN:VEVENT')) {
           currentEvent = {};
@@ -73,9 +71,8 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, s
     }
   };
 
- 
   return (
-    <>
+    <div>
       <div
         id="drop_zone"
         onDrop={dropHandler}
@@ -84,15 +81,12 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, s
         className={`drop-zone ${isDragOver ? 'drop-zone-drag-over' : ''}`}>
         <p>Drag one or more files to this <i>drop zone</i>.</p>
       </div>
-
       
     </div>
   );
 }
 
-
-const TestButton = ({ e, uniqueEvents, setUnqiueEvents, events }) => {
-
+const TestButton = ({ uniqueEvents, setUnqiueEvents, events }) => {
   const getUniqueEventsByName = (events) => {
     const uniqueEvents = [];
     const seenSummaries = new Set();
@@ -107,10 +101,9 @@ const TestButton = ({ e, uniqueEvents, setUnqiueEvents, events }) => {
     return uniqueEvents;
   };
 
-  // Run this code on the button press
+  // Run thhis code on the button press
   const buttonPress = () => {
-    const newUniqueEvents = getUniqueEventsByName(events);
-    console.log("UNIQUE: ", newUniqueEvents)  
+    const newUniqueEvents = getUniqueEventsByName(events);  
     setUnqiueEvents([...uniqueEvents, ...newUniqueEvents]);
   };
 
@@ -119,63 +112,11 @@ const TestButton = ({ e, uniqueEvents, setUnqiueEvents, events }) => {
 };
 
 
-// const DetermineTime = ({ events }) => {
-//   const [time1, setTime1] = useState('09:00');
-//   const [time2, setTime2] = useState('17:00');
-
-//   const handleCalculation = (e) => {
-//     e.preventDefault(); // Prevent the default form submit action
-//     console.log( time1, time2 )
-//   }
-  
-//   const handleTime1Change = (e) => {
-//     setTime1(e.target.value);
-//   };
-
-//   const handleTime2Change = (e) => {
-//     setTime2(e.target.value);
-//   };
-
-//   return (
-//     <form onSubmit={handleCalculation}>
-//       {/* First Hour Picker */}
-//       <div>
-//         <label htmlFor="timePicker1">Select Hour 1:</label>
-//         <input type="time" id="timePicker1" name="timePicker1" value={time1} onChange={handleTime1Change} />
-//       </div>
-
-//       {/* Second Hour Picker */}
-//       <div>
-//         <label htmlFor="timePicker2">Select Hour 2:</label>
-//         <input type="time" id="timePicker2" name="timePicker2" value={time2} onChange={handleTime2Change} />
-//       </div>
-
-//       {/* Submit Button */}
-//       <div>
-//         <button type="submit">Submit</button>
-//       </div>
-//     </form>
-//   );
-// }
-
-
-
 export default function App (){ 
-  const [selected, setSelected] = useState();
-  const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
-  const [events, setEvents] = useState([]);
-  const [uniqueEvents, setUnqiueEvents] = useState([]);
-  // cosnt [epochTimes, setEpochTimes] = useState([])
+    const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
+    const [events, setEvents] = useState([]);
+    const [uniqueEvents, setUnqiueEvents] = useState([]);
 
-  const data = React.useMemo(
-    () => [
-      { name: 'Alice', age: 30, city: 'New York' },
-      { name: 'Bob', age: 32, city: 'San Francisco' },
-      { name: 'Carly', age: 25, city: 'Miami' },
-      // Add more user data here
-    ],
-    []
-  );
     return (
       <div>
         <DropBox 
@@ -191,15 +132,9 @@ export default function App (){
           setUnqiueEvents={setUnqiueEvents}
           events={events}
         />
-        <MyCalendarComponent 
-        selected={selected}
-        setSelected={setSelected}
-        events={events}
-        uniqueEvents={uniqueEvents}
-        />
-        <UserTable data={data} />
       </div>
     );
 
   }
 
+  console.log("THIS IS A TEST")
