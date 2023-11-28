@@ -31,8 +31,8 @@ const CalendarComponent = ({ events, selected, setSelected, epochTimes, setEpoch
     return (
         <div style={{ height: '700px' }}>
             <Calendar
-                // selected={selected}
-                // onSelectEvent={handleSelected}
+                selected={selected}
+                onSelectEvent={handleSelected}
                 selectable={true}
                 localizer={localizer}
                 popup
@@ -40,7 +40,7 @@ const CalendarComponent = ({ events, selected, setSelected, epochTimes, setEpoch
                 startAccessor="start"
                 endAccessor="end"
                 defaultView="week"
-                // onSelectSlot={handleSlotSelection}
+                onSelectSlot={handleSlotSelection}
             />
         </div>
     );
