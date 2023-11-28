@@ -10,7 +10,6 @@ export default function App (){
   const [selected, setSelected] = useState();
   const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
   const [events, setEvents] = useState([]);
-  const [uniqueEvents, setUnqiueEvents] = useState([]);
   const [epochTimes, setEpochTimes] = useState([])
 
   
@@ -21,19 +20,14 @@ export default function App (){
           setEvents={setEvents}
           isDragOver={isDragOver}
           setIsDragOver={setIsDragOver}
-          uniqueEvents={uniqueEvents}
-          setUnqiueEvents={setUnqiueEvents} 
         />
-        <TestButton 
-          uniqueEvents={uniqueEvents}
-          setUnqiueEvents={setUnqiueEvents}
+        {/* <TestButton 
           events={events}
-        />
+        /> */}
         <MyCalendarComponent 
         selected={selected}
         setSelected={setSelected}
         events={events}
-        uniqueEvents={uniqueEvents}
         epochTimes={epochTimes}
         setEpochTimes={setEpochTimes}
         />
