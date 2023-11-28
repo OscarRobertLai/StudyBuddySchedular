@@ -23,6 +23,7 @@ function convertToDate(str) {
 const getEventsList = ( {events, uniqueEvents} ) => {
     const eventsArray = []
     events.forEach(singleEvent => {
+        // console.log("SINGLE EVENT", singleEvent)
         const dtStartValue = convertToDate(singleEvent["DTSTART;TZID=Australia/Melbourne"]);
         const dtEndValue = convertToDate(singleEvent["DTEND;TZID=Australia/Melbourne"]);
 
