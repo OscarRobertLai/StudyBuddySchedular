@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import MyCalendarComponent from "./components/Calendar";
 
 
 const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, setUnqiueEvents }) => 
@@ -10,7 +11,7 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, s
       const events = [];
       const lines = data.split(/\r\n|\n|\r/);
       let currentEvent = null;
-  
+
       lines.forEach(line => {
         if (line.startsWith('BEGIN:VEVENT')) {
           currentEvent = {};
@@ -86,7 +87,9 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, s
   );
 }
 
-const TestButton = ({ uniqueEvents, setUnqiueEvents, events }) => {
+
+const TestButton = ({ e, uniqueEvents, setUnqiueEvents, events }) => {
+
   const getUniqueEventsByName = (events) => {
     const uniqueEvents = [];
     const seenSummaries = new Set();
@@ -101,15 +104,56 @@ const TestButton = ({ uniqueEvents, setUnqiueEvents, events }) => {
     return uniqueEvents;
   };
 
-  // Run thhis code on the button press
+  // Run this code on the button press
   const buttonPress = () => {
-    const newUniqueEvents = getUniqueEventsByName(events);  
+    const newUniqueEvents = getUniqueEventsByName(events);
+    console.log("UNIQUE: ", newUniqueEvents)  
     setUnqiueEvents([...uniqueEvents, ...newUniqueEvents]);
   };
 
   return <button onClick={buttonPress}>Press Me</button>;
   
 };
+
+
+const DetermineTime = ({ events }) => {
+  const [time1, setTime1] = useState('09:00');
+  const [time2, setTime2] = useState('17:00');
+
+  const handleCalculation = (e) => {
+    e.preventDefault(); // Prevent the default form submit action
+    console.log( time1, time2 )
+  }
+  
+  const handleTime1Change = (e) => {
+    setTime1(e.target.value);
+  };
+
+  const handleTime2Change = (e) => {
+    setTime2(e.target.value);
+  };
+
+  return (
+    <form onSubmit={handleCalculation}>
+      {/* First Hour Picker */}
+      <div>
+        <label htmlFor="timePicker1">Select Hour 1:</label>
+        <input type="time" id="timePicker1" name="timePicker1" value={time1} onChange={handleTime1Change} />
+      </div>
+
+      {/* Second Hour Picker */}
+      <div>
+        <label htmlFor="timePicker2">Select Hour 2:</label>
+        <input type="time" id="timePicker2" name="timePicker2" value={time2} onChange={handleTime2Change} />
+      </div>
+
+      {/* Submit Button */}
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  );
+}
 
 
 export default function App (){ 
@@ -132,9 +176,12 @@ export default function App (){
           setUnqiueEvents={setUnqiueEvents}
           events={events}
         />
+        <MyCalendarComponent 
+        events={events}
+        uniqueEvents={uniqueEvents}
+        />
+        <DetermineTime/>
       </div>
     );
 
   }
-
-  console.log("THIS IS A TEST")
