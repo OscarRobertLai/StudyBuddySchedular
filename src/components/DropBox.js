@@ -26,8 +26,6 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) =>
           const dtStartValue = convertToDate(currentEvent["DTSTART;TZID=Australia/Melbourne"]);
           const dtEndValue = convertToDate(currentEvent["DTEND;TZID=Australia/Melbourne"]);
 
-          // console.log("START", currentEvent["DTSTART;TZID=Australia/Melbourne"])
-          // console.log("START", dtEndValue, dtStartValue)
           const convertedEvent = {
             title: currentEvent.DESCRIPTION,
             start: dtStartValue,
@@ -45,8 +43,6 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) =>
       return events;
     };
 
-    
-  
     // Handler for reading and parsing ICS file content
     const readFileContent = (file) => {
       const reader = new FileReader();
