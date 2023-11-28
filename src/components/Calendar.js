@@ -36,18 +36,40 @@ const getEventsList = ( {events, uniqueEvents} ) => {
     return eventsArray
 }
 
-const CalendarComponent = ({ events, uniqueEvents }) => {
+const CalendarComponent = ({ events, uniqueEvents, selected, setSelected}) => {
+
+     const handleSlotSelection = ({ start, end, action }) => 
+     {
+        switch (action) {
+            case "click":
+                console.log("CLICKED", start.getDate(), end.getDate())
+                break;
+            case "select":
+                console.log("SELECTED", start.getDate(), end.getDate(), start.getTime(), end.getTime())
+                break;
+        }
+    return  { style: { backgroundColor: 'black' } };
+    };
+
+    const handleSelected = (event) => 
+    {
+        setSelected(event);
+        console.log('[handleSelected - event]', event);
+    };
+    
     return (
         <div style={{ height: '700px' }}>
             <Calendar
+                selected={selected}
+                onSelectEvent={handleSelected}
+                selectable={true}
                 localizer={localizer}
-                events={getEventsList({events, uniqueEvents})}
+                popup
+                events={getEventsList({ events, uniqueEvents })}
                 startAccessor="start"
                 endAccessor="end"
                 defaultView="week"
-                onSelectSlot={(slotInfo) => {
-                    console.log(slotInfo)
-                }}
+                onSelectSlot={handleSlotSelection}
             />
         </div>
     );
