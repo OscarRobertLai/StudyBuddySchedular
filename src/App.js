@@ -73,9 +73,8 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, s
     }
   };
 
- 
   return (
-    <>
+    <div>
       <div
         id="drop_zone"
         onDrop={dropHandler}
@@ -84,7 +83,6 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, uniqueEvents, s
         className={`drop-zone ${isDragOver ? 'drop-zone-drag-over' : ''}`}>
         <p>Drag one or more files to this <i>drop zone</i>.</p>
       </div>
-
       
     </div>
   );
@@ -202,4 +200,3 @@ export default function App (){
     );
 
   }
-
