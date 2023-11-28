@@ -34,6 +34,8 @@ export default function App (){
         setSelected={setSelected}
         events={events}
         uniqueEvents={uniqueEvents}
+        epochTimes={epochTimes}
+        setEpochTimes={setEpochTimes}
         />
         <UserTable />
       </div>
@@ -41,4 +43,3 @@ export default function App (){
 
   }
 
-  
