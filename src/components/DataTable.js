@@ -1,7 +1,18 @@
 import React from 'react';
 import { useTable } from 'react-table';
 
-const UserTable = ({ data }) => {
+
+const UserTable = () => {
+    const data = React.useMemo (
+        () => [
+          { name: 'Alice', age: 30, city: 'New York' },
+          { name: 'Bob', age: 32, city: 'San Francisco' },
+          { name: 'Carly', age: 25, city: 'Miami' },
+          // Add more user data here
+        ],
+        []
+      );
+    
   // Define columns
   const columns = React.useMemo(
     () => [
