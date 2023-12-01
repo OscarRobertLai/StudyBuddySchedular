@@ -11,18 +11,24 @@ export default function App (){
   const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
   const [events, setEvents] = useState([]);
   const [uniqueEvents, setUnqiueEvents] = useState([]);
-  const [epochTimes, setEpochTimes] = useState([])
+  const [epochTimes, setEpochTimes] = useState([]);
+  const [files, setFiles] = useState([]);
+  const [uniqueFileName, setUniqueFileName] = useState([]);
 
   
     return (
       <div>
-        <DropBox 
+        <DropBox  
           events={events}
           setEvents={setEvents}
           isDragOver={isDragOver}
           setIsDragOver={setIsDragOver}
           uniqueEvents={uniqueEvents}
           setUnqiueEvents={setUnqiueEvents} 
+          uniqueFileName={uniqueFileName}
+          setUniqueFileName={setUniqueFileName}
+          files={files}
+          setFiles={setFiles}
         />
         <TestButton 
           uniqueEvents={uniqueEvents}
