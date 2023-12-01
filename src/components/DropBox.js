@@ -1,6 +1,5 @@
-const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) => 
+const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles, uniqueFileName, setUniqueFileName }) => 
 {
-
     function convertToDate(str) {
       // Extract components from the string
       const year = parseInt(str.substring(0, 4), 10);
@@ -45,14 +44,19 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) =>
 
     // Handler for reading and parsing ICS file content
     const readFileContent = (file) => {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        const content = e.target.result;
-        const parsedEvents = parseICS(content);
-        setEvents([...events, ...parsedEvents]);
-        console.log('Parsed Events: ', parsedEvents);
-      };
-      reader.readAsText(file);
+      if (!uniqueFileName.includes(file.name)) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const content = e.target.result;
+          const parsedEvents = parseICS(content);
+          setEvents([...events, ...parsedEvents]);
+          setUniqueFileName([...uniqueFileName, file.name])
+          console.log('Parsed Events: ', parsedEvents);
+        };
+        reader.readAsText(file);
+      } else {
+        console.log('file already exists')
+      }
     };
   
     // Update the drag over handler
@@ -78,9 +82,12 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) =>
         if (event.dataTransfer.items[i].kind === 'file') {
           const file = event.dataTransfer.items[i].getAsFile();
           console.log('File name: ', file.name);
+          const droppedFiles = Array.from(event.dataTransfer.files);
+          setFiles([...files, file]);
           readFileContent(file);
         }
       }
+      console.log('FILES: ', files)
     } else {
       for (let i = 0; i < event.dataTransfer.files.length; i++) {
         console.log('File name: ', event.dataTransfer.files[i].name);
@@ -98,8 +105,19 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver }) =>
         onDragLeave={dragLeaveHandler}
         className={`drop-zone ${isDragOver ? 'drop-zone-drag-over' : ''}`}>
         <p>Drag one or more files to this <i>drop zone</i>.</p>
+        
+        {files.map((file) => (
+          <div key={file.name} style={{ margin: '2px' , float: 'left'}}>
+            <img
+              src="/calendar.png"
+              alt={file.name}
+              style={{ maxWidth: '100%', maxHeight: '70px', marginBottom: '5px' }}
+            />
+            <p>{file.name}</p>
+          </div>
+        ))}
+
       </div>
-      
     </div>
   );
 }
