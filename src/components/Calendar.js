@@ -3,12 +3,14 @@ import React from 'react';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import moment from 'moment';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
+import timeSlotFinder from "../utils/timeSlotFinder"
+
 
 // Localizer for calendar
 const localizer = momentLocalizer(moment);
 
-const CalendarComponent = ({ events, selected, setSelected, epochTimes, setEpochTimes}) => {
-
+const CalendarComponent = ({ events, selected, setSelected, binarySearchTree, freeSlots, setFreeSlots}) => {
+    // console.log("EVENTS", events)
      const handleSlotSelection = ({ start, end, action }) => 
      {
         switch (action) {
@@ -16,10 +18,14 @@ const CalendarComponent = ({ events, selected, setSelected, epochTimes, setEpoch
                 console.log("CLICKED", start.getDate(), end.getDate())
                 break;
             case "select":
-                console.log("SELECTED", start.getDate(), end.getDate(), start.getTime(), end.getTime())
+                const tsf = timeSlotFinder(binarySearchTree, start, end);
+                
+                // console.log("SELECTED", start.getDate(), end.getDate(), start.getTime(), end.getTime())
                 break;
-        }
+    }
+
     return  { style: { backgroundColor: 'black' } };
+
     };
 
     const handleSelected = (event) => 
