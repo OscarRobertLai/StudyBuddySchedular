@@ -49,9 +49,10 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
         reader.onload = (e) => {
           const content = e.target.result;
           const parsedEvents = parseICS(content);
-          setEvents([...events, ...parsedEvents]);
+          setEvents([...events, [files.length,parsedEvents]]);
           setUniqueFileName([...uniqueFileName, file.name])
           console.log('Parsed Events: ', parsedEvents);
+          console.log('Events: ', events); // WORK FROM HERE
         };
         reader.readAsText(file);
       } else {
@@ -107,7 +108,7 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
         <p>Drag one or more files to this <i>drop zone</i>.</p>
         
         {files.map((file) => (
-          <div key={file.name} style={{ margin: '2px' , float: 'left'}}>
+          <div key={file.name} style={{ margin: '2px' , display: 'inline-block' }}>
             <img
               src="/calendar.png"
               alt={file.name}

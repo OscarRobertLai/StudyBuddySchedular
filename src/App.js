@@ -38,8 +38,8 @@ export default function App (){
         <MyCalendarComponent 
         selected={selected}
         setSelected={setSelected}
-        events={events}
-        uniqueEvents={uniqueEvents}
+        events={events.flatMap(list => list)}
+        groupedEvents={events}
         epochTimes={epochTimes}
         setEpochTimes={setEpochTimes}
         />
