@@ -1,0 +1,823 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:jrud0005@student.monash.edu
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+DTSTART:20230303T010000Z
+DTEND:20230303T020000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=michaela.sykes-turner@monashmotorsport.com:mailto:michaela.syk
+ es-turner@monashmotorsport.com
+UID:7fmhgr1s1t6qk7n919f9b28hsh@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=michae
+ la.sykes-turner@monashmotorsport.com;X-NUM-GUESTS=0:mailto:michaela.sykes-t
+ urner@monashmotorsport.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ch
+ armaine.chin@monashmotorsport.com;X-NUM-GUESTS=0:mailto:charmaine.chin@mona
+ shmotorsport.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=isaac.
+ sims@monash.edu;X-NUM-GUESTS=0:mailto:isaac.sims@monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=jack.c
+ hurch@monash.edu;X-NUM-GUESTS=0:mailto:jack.church@monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ eresa.scott@monash.edu;X-NUM-GUESTS=0:mailto:theresa.scott@monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=Scott 
+ Wordley;X-NUM-GUESTS=0:mailto:scott.wordley@monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jr
+ ee0010@student.monash.edu;X-NUM-GUESTS=0:mailto:jree0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=dr
+ ob0027@student.monash.edu;X-NUM-GUESTS=0:mailto:drob0027@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ld
+ ab0002@student.monash.edu;X-NUM-GUESTS=0:mailto:ldab0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=nl
+ yn0001@student.monash.edu;X-NUM-GUESTS=0:mailto:nlyn0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cb
+ al0014@student.monash.edu;X-NUM-GUESTS=0:mailto:cbal0014@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jr
+ ud0005@student.monash.edu;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sd
+ hi0010@student.monash.edu;X-NUM-GUESTS=0:mailto:sdhi0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=msur00
+ 11@student.monash.edu;X-NUM-GUESTS=0:mailto:msur0011@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ss
+ uj0002@student.monash.edu;X-NUM-GUESTS=0:mailto:ssuj0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sh
+ ia0001@student.monash.edu;X-NUM-GUESTS=0:mailto:shia0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=tmaa00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:tmaa0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=vb
+ ar0012@student.monash.edu;X-NUM-GUESTS=0:mailto:vbar0012@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bb
+ ow0003@student.monash.edu;X-NUM-GUESTS=0:mailto:bbow0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=anew00
+ 19@student.monash.edu;X-NUM-GUESTS=0:mailto:anew0019@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=baps00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:baps0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mb
+ ra0040@student.monash.edu;X-NUM-GUESTS=0:mailto:mbra0040@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ocha00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:ocha0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ae
+ dm0003@student.monash.edu;X-NUM-GUESTS=0:mailto:aedm0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cd
+ hl0001@student.monash.edu;X-NUM-GUESTS=0:mailto:cdhl0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ss
+ im0027@student.monash.edu;X-NUM-GUESTS=0:mailto:ssim0027@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=macken
+ zie.yandell@monashmotorsport.com;X-NUM-GUESTS=0:mailto:mackenzie.yandell@mo
+ nashmotorsport.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ sh.fromberg@monashmotorsport.com;X-NUM-GUESTS=0:mailto:josh.fromberg@monash
+ motorsport.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=tm
+ ur0028@student.monash.edu;X-NUM-GUESTS=0:mailto:tmur0028@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ap
+ un0008@student.monash.edu;X-NUM-GUESTS=0:mailto:apun0008@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=anew00
+ 18@student.monash.edu;X-NUM-GUESTS=0:mailto:anew0018@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=pb
+ re0009@student.monash.edu;X-NUM-GUESTS=0:mailto:pbre0009@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sl
+ im0133@student.monash.edu;X-NUM-GUESTS=0:mailto:slim0133@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=pb
+ re0009@gmail.com;X-NUM-GUESTS=0:mailto:pbre0009@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/ipt-cjsp-ipg
+CREATED:20230302T023220Z
+DESCRIPTION:You will meet with your guide outside the Woodside building\, a
+ t the end closest to the campus center. \n\nPlease make sure you are wearin
+ g closed toed shoes\, and bring any questions you might have about life on 
+ an engineering student team!\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https:
+ //meet.google.com/ipt-cjsp-ipg\nOr dial: (US) +1 562-641-5737 PIN: 53949811
+ 4#\n\nLearn more about Meet at: https://support.google.com/a/users/answer/9
+ 282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230308T052858Z
+LOCATION:Monash Makerspace\, 23 College Walk\, Clayton
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Makerspace Tour
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230307T070000Z
+DTEND:20230307T090000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=c_f0p9uegdfnrq3j826fkt9hmgc4@group.calendar.google.com:mailto:
+ c_f0p9uegdfnrq3j826fkt9hmgc4@group.calendar.google.com
+UID:09a8m35ms29tpdsnc05q7bcgrq@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jl
+ ay0017@student.monash.edu;X-NUM-GUESTS=0:mailto:jlay0017@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tngu04
+ 22@student.monash.edu;X-NUM-GUESTS=0:mailto:tngu0422@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=yc
+ ha0066@student.monash.edu;X-NUM-GUESTS=0:mailto:ycha0066@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ua
+ mi0001@student.monash.edu;X-NUM-GUESTS=0:mailto:uami0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ssim00
+ 23@student.monash.edu;X-NUM-GUESTS=0:mailto:ssim0023@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sw
+ el0018@student.monash.edu;X-NUM-GUESTS=0:mailto:swel0018@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=av
+ im0001@student.monash.edu;X-NUM-GUESTS=0:mailto:avim0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=kw
+ il0063@student.monash.edu;X-NUM-GUESTS=0:mailto:kwil0063@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ss
+ el0021@student.monash.edu;X-NUM-GUESTS=0:mailto:ssel0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=jrud0
+ 005@student.monash.edu;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=dnar00
+ 03@student.monash.edu;X-NUM-GUESTS=0:mailto:dnar0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mp
+ ha0039@student.monash.edu;X-NUM-GUESTS=0:mailto:mpha0039@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=as
+ he0076@student.monash.edu;X-NUM-GUESTS=0:mailto:ashe0076@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sn
+ ai0034@student.monash.edu;X-NUM-GUESTS=0:mailto:snai0034@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ssan00
+ 69@student.monash.edu;X-NUM-GUESTS=0:mailto:ssan0069@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=odab00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:odab0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mcor00
+ 20@student.monash.edu;X-NUM-GUESTS=0:mailto:mcor0020@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lbur00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:lbur0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bw
+ il0057@student.monash.edu;X-NUM-GUESTS=0:mailto:bwil0057@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=hr
+ ou0006@student.monash.edu;X-NUM-GUESTS=0:mailto:hrou0006@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=fr
+ ah0014@student.monash.edu;X-NUM-GUESTS=0:mailto:frah0014@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=kk
+ an0029@student.monash.edu;X-NUM-GUESTS=0:mailto:kkan0029@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=vb
+ ar0012@student.monash.edu;X-NUM-GUESTS=0:mailto:vbar0012@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=zv
+ an0005@student.monash.edu;X-NUM-GUESTS=0:mailto:zvan0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=siva00
+ 04@student.monash.edu;X-NUM-GUESTS=0:mailto:siva0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=edua00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:edua0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ml
+ ow0020@student.monash.edu;X-NUM-GUESTS=0:mailto:mlow0020@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=nl
+ yy0007@student.monash.edu;X-NUM-GUESTS=0:mailto:nlyy0007@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ikha00
+ 20@student.monash.edu;X-NUM-GUESTS=0:mailto:ikha0020@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ruda00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:ruda0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=tn
+ gu0424@student.monash.edu;X-NUM-GUESTS=0:mailto:tngu0424@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=sgla00
+ 06@student.monash.edu;X-NUM-GUESTS=0:mailto:sgla0006@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sw
+ on0151@student.monash.edu;X-NUM-GUESTS=0:mailto:swon0151@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mb
+ et0007@student.monash.edu;X-NUM-GUESTS=0:mailto:mbet0007@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=nr
+ aj0031@student.monash.edu;X-NUM-GUESTS=0:mailto:nraj0031@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=rk
+ ob0005@student.monash.edu;X-NUM-GUESTS=0:mailto:rkob0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=fh
+ ic0003@student.monash.edu;X-NUM-GUESTS=0:mailto:fhic0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mhem00
+ 08@student.monash.edu;X-NUM-GUESTS=0:mailto:mhem0008@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=wz
+ ha0190@student.monash.edu;X-NUM-GUESTS=0:mailto:wzha0190@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=yyou0
+ 007@student.monash.edu;X-NUM-GUESTS=0:mailto:yyou0007@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ld
+ ut0004@student.monash.edu;X-NUM-GUESTS=0:mailto:ldut0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=msth00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:msth0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ml
+ ee0147@student.monash.edu;X-NUM-GUESTS=0:mailto:mlee0147@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=pn
+ gu0034@student.monash.edu;X-NUM-GUESTS=0:mailto:pngu0034@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=abee00
+ 04@student.monash.edu;X-NUM-GUESTS=0:mailto:abee0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mchu00
+ 29@student.monash.edu;X-NUM-GUESTS=0:mailto:mchu0029@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ec
+ ho0068@student.monash.edu;X-NUM-GUESTS=0:mailto:echo0068@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=dm
+ en0022@student.monash.edu;X-NUM-GUESTS=0:mailto:dmen0022@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=et
+ ay0034@student.monash.edu;X-NUM-GUESTS=0:mailto:etay0034@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sb
+ od0004@student.monash.edu;X-NUM-GUESTS=0:mailto:sbod0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ps
+ ur0004@student.monash.edu;X-NUM-GUESTS=0:mailto:psur0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=sfuj00
+ 12@student.monash.edu;X-NUM-GUESTS=0:mailto:sfuj0012@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=kh
+ aw0009@student.monash.edu;X-NUM-GUESTS=0:mailto:khaw0009@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ms
+ he0076@student.monash.edu;X-NUM-GUESTS=0:mailto:mshe0076@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=echo00
+ 66@student.monash.edu;X-NUM-GUESTS=0:mailto:echo0066@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jm
+ ce0008@student.monash.edu;X-NUM-GUESTS=0:mailto:jmce0008@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cd
+ ie0008@student.monash.edu;X-NUM-GUESTS=0:mailto:cdie0008@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=tj
+ p39@outlook.com;X-NUM-GUESTS=0:mailto:tjp39@outlook.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=smcm00
+ 08@student.monash.edu;X-NUM-GUESTS=0:mailto:smcm0008@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ta
+ kb0003@student.monash.edu;X-NUM-GUESTS=0:mailto:takb0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jboo00
+ 16@student.monash.edu;X-NUM-GUESTS=0:mailto:jboo0016@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ld
+ uo0005@student.monash.edu;X-NUM-GUESTS=0:mailto:lduo0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sd
+ ao0002@student.monash.edu;X-NUM-GUESTS=0:mailto:sdao0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jw
+ uu0148@student.monash.edu;X-NUM-GUESTS=0:mailto:jwuu0148@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ssol00
+ 17@student.monash.edu;X-NUM-GUESTS=0:mailto:ssol0017@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bs
+ za0002@student.monash.edu;X-NUM-GUESTS=0:mailto:bsza0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=tm
+ ac0023@student.monash.edu;X-NUM-GUESTS=0:mailto:tmac0023@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=sgan00
+ 15@student.monash.edu;X-NUM-GUESTS=0:mailto:sgan0015@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=kn
+ gu0087@student.monash.edu;X-NUM-GUESTS=0:mailto:kngu0087@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=oliv00
+ 03@student.monash.edu;X-NUM-GUESTS=0:mailto:oliv0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mu
+ me0002@student.monash.edu;X-NUM-GUESTS=0:mailto:mume0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=rc
+ ho0050@student.monash.edu;X-NUM-GUESTS=0:mailto:rcho0050@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=aa
+ hm0063@student.monash.edu;X-NUM-GUESTS=0:mailto:aahm0063@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=dpab00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:dpab0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=sk
+ ha0093@student.monash.edu;X-NUM-GUESTS=0:mailto:skha0093@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bhay00
+ 14@student.monash.edu;X-NUM-GUESTS=0:mailto:bhay0014@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ss
+ re0008@student.monash.edu;X-NUM-GUESTS=0:mailto:ssre0008@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ld
+ ab0002@student.monash.edu;X-NUM-GUESTS=0:mailto:ldab0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=apun00
+ 09@student.monash.edu;X-NUM-GUESTS=0:mailto:apun0009@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=dthi00
+ 09@student.monash.edu;X-NUM-GUESTS=0:mailto:dthi0009@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jmee00
+ 06@student.monash.edu;X-NUM-GUESTS=0:mailto:jmee0006@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ecor00
+ 22@student.monash.edu;X-NUM-GUESTS=0:mailto:ecor0022@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=odow00
+ 06@student.monash.edu;X-NUM-GUESTS=0:mailto:odow0006@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=acho01
+ 16@student.monash.edu;X-NUM-GUESTS=0:mailto:acho0116@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=vf
+ lo0003@student.monash.edu;X-NUM-GUESTS=0:mailto:vflo0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cs
+ hi0035@student.monash.edu;X-NUM-GUESTS=0:mailto:cshi0035@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=dh
+ or0009@student.monash.edu;X-NUM-GUESTS=0:mailto:dhor0009@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=al
+ iu0045@student.monash.edu;X-NUM-GUESTS=0:mailto:aliu0045@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=icas00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:icas0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=eg
+ ua0003@student.monash.edu;X-NUM-GUESTS=0:mailto:egua0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tfaz00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:tfaz0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=nj
+ oh0025@student.monash.edu;X-NUM-GUESTS=0:mailto:njoh0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=sfir00
+ 03@student.monash.edu;X-NUM-GUESTS=0:mailto:sfir0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=rb
+ ru0006@student.monash.edu;X-NUM-GUESTS=0:mailto:rbru0006@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=el
+ oh0010@student.monash.edu;X-NUM-GUESTS=0:mailto:eloh0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=aval00
+ 17@student.monash.edu;X-NUM-GUESTS=0:mailto:aval0017@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jg
+ os0009@student.monash.edu;X-NUM-GUESTS=0:mailto:jgos0009@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=kh
+ of0002@student.monash.edu;X-NUM-GUESTS=0:mailto:khof0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jl
+ iu342@student.monash.edu;X-NUM-GUESTS=0:mailto:jliu342@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=re
+ va0013@student.monash.edu;X-NUM-GUESTS=0:mailto:reva0013@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jooi00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:jooi0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=dm
+ at0019@student.monash.edu;X-NUM-GUESTS=0:mailto:dmat0019@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=cbal00
+ 14@student.monash.edu;X-NUM-GUESTS=0:mailto:cbal0014@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=tm
+ cc0026@student.monash.edu;X-NUM-GUESTS=0:mailto:tmcc0026@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bf
+ el0003@student.monash.edu;X-NUM-GUESTS=0:mailto:bfel0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=kk
+ ar0033@student.monash.edu;X-NUM-GUESTS=0:mailto:kkar0033@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jtho00
+ 62@student.monash.edu;X-NUM-GUESTS=0:mailto:jtho0062@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=aobr00
+ 18@student.monash.edu;X-NUM-GUESTS=0:mailto:aobr0018@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ch
+ ee0034@student.monash.edu;X-NUM-GUESTS=0:mailto:chee0034@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=hg
+ ug0001@student.monash.edu;X-NUM-GUESTS=0:mailto:hgug0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=vn
+ gu0056@student.monash.edu;X-NUM-GUESTS=0:mailto:vngu0056@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ar
+ an0042@student.monash.edu;X-NUM-GUESTS=0:mailto:aran0042@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=nk
+ hu0007@student.monash.edu;X-NUM-GUESTS=0:mailto:nkhu0007@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lbah00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:lbah0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=aham00
+ 39@student.monash.edu;X-NUM-GUESTS=0:mailto:aham0039@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=scoo00
+ 22@student.monash.edu;X-NUM-GUESTS=0:mailto:scoo0022@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ab
+ ur0042@student.monash.edu;X-NUM-GUESTS=0:mailto:abur0042@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ec
+ he0071@student.monash.edu;X-NUM-GUESTS=0:mailto:eche0071@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=as
+ ha0247@student.monash.edu;X-NUM-GUESTS=0:mailto:asha0247@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=shia00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:shia0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=dd
+ ju0002@student.monash.edu;X-NUM-GUESTS=0:mailto:ddju0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bbow00
+ 03@student.monash.edu;X-NUM-GUESTS=0:mailto:bbow0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=gm
+ os0003@student.monash.edu;X-NUM-GUESTS=0:mailto:gmos0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=blen00
+ 03@student.monash.edu;X-NUM-GUESTS=0:mailto:blen0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=dz
+ ho0022@student.monash.edu;X-NUM-GUESTS=0:mailto:dzho0022@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mg
+ re0037@student.monash.edu;X-NUM-GUESTS=0:mailto:mgre0037@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jl
+ im0234@student.monash.edu;X-NUM-GUESTS=0:mailto:jlim0234@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=shenki
+ t108@gmail.com;X-NUM-GUESTS=0:mailto:shenkit108@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=as
+ en0025@student.macrob.edu;X-NUM-GUESTS=0:mailto:asen0025@student.macrob.edu
+CREATED:20230305T211630Z
+DESCRIPTION:Friends &amp\; Mentors in Engineering (FaME) Games Night!!<br>T
+ his is the perfect opportunity to meet/re-meet your mentor and make new fri
+ ends all while playing board games\, eating pizza and just chilling. <br><b
+ r><b>Where: Learning &amp\; Teaching Building Room 331 (Level 3)</b><br><b>
+ When: Tuesday 7th March 6-8pm</b>
+LAST-MODIFIED:20230312T093217Z
+LOCATION:Learning and Teaching Building\, 19 Ancora Imparo Wy\, Clayton VIC
+  3800\, Australia
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:FaME Games Night  🍕  🎲
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230330T070000Z
+DTEND:20230330T080000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=tchi0025@student.monash.edu:mailto:tchi0025@student.monash.edu
+UID:vq9gusg4qa6uh4p8thutufknj0@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tchi00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:tchi0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ed
+ av0021@student.monash.edu;X-NUM-GUESTS=0:mailto:edav0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jr
+ ud0005@student.monash.edu;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cg
+ er0010@student.monash.edu;X-NUM-GUESTS=0:mailto:cger0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jhab00
+ 04@student.monash.edu;X-NUM-GUESTS=0:mailto:jhab0004@student.monash.edu
+CREATED:20230325T070406Z
+DESCRIPTION:Hi there\, \n\nTakudzwa Chitambo is inviting you to a scheduled
+  Zoom meeting. \n\nJoin from a PC\, Mac\, iPad\, iPhone or Android device: 
+ \n\n    Please click this URL to start or join. https://monash.zoom.us/j/83
+ 273501050?pwd=NmpxYTB5L3dxWVFDMkpzYjZXTTZlQT09 \n    Or\, go to https://mon
+ ash.zoom.us/join and enter meeting ID: 832 7350 1050  and passcode: 913811\
+ n        Ensure your device has a dedicated microphone and webcam.\n       
+  **Please do not share these details with those not on the participant list
+ **\n\n \nJoin from a dial-in phone: \n\n    Dial: +61 3 990 59666 [+61 3 99
+ 05 ZOOM] or +61 2 8015 2088\n    Meeting ID: 832 7350 1050 \n    Internatio
+ nal numbers available: https://monash.zoom.us/u/kvkASGQqp \n\n\nJoin from a
+  Video capable room system(H.323/SIP): \n\nDial:\n    61262227588 (From wit
+ hin Monash only) \n  or:\n    103.122.166.55 (IP) or\n    zmau.us (Backup)\
+ n\n    Meeting ID: 832 7350 1050 \n    Passcode: 913811\n\n\n==============
+ ==============================\nUse of Zoom is subject to Monash University
+ ’s IT <a href="https://www.monash.edu/policy-bank/policies-and-procedures/m
+ anagement/its/Information-Technology-Acceptable-Use-Policy.pdf">Acceptable 
+ Use Policy</a>.\n \nFor information relating to the handling of your person
+ al information please refer to Monash University’s <a href="https://www.mon
+ ash.edu/__data/assets/pdf_file/0003/790086/Privacy.pdf">Data Protection and
+  Privacy Procedure</a>.\n \nIf you have any questions about how Monash Univ
+ ersity is collecting and handling your personal information\, please contac
+ t our Data Protection and Privacy Office at dataprotectionofficer@monash.ed
+ u.\n============================================
+LAST-MODIFIED:20230325T212111Z
+LOCATION:https://monash.zoom.us/j/83273501050?pwd=NmpxYTB5L3dxWVFDMkpzYjZXT
+ TZlQT09
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Committee Meeting #3
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230330T050000Z
+DTEND:20230330T060000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=tchi0025@student.monash.edu:mailto:tchi0025@student.monash.edu
+UID:605qnrb3tgn68rrbdr1oestn67@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=nw
+ ar0021@student.monash.edu;X-NUM-GUESTS=0:mailto:nwar0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tchi00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:tchi0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jr
+ ud0005@student.monash.edu;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+CREATED:20230328T101732Z
+LAST-MODIFIED:20230330T045720Z
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:MSS Onboarding Session
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230330T070000Z
+DTEND:20230330T080000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=science@monashclubs.org:mailto:science@monashclubs.org
+UID:37fmtqat67ejo5t520er79bolo@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=dfer00
+ 30@student.monash.edu;X-NUM-GUESTS=0:mailto:dfer0030@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=cmcc00
+ 18@student.monash.edu;X-NUM-GUESTS=0:mailto:cmcc0018@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ariv00
+ 06@student.monash.edu;X-NUM-GUESTS=0:mailto:ariv0006@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=mpos00
+ 04@student.monash.edu;X-NUM-GUESTS=0:mailto:mpos0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=djay00
+ 26@student.monash.edu;X-NUM-GUESTS=0:mailto:djay0026@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nwar00
+ 21@student.monash.edu;X-NUM-GUESTS=0:mailto:nwar0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=bdel00
+ 10@student.monash.edu;X-NUM-GUESTS=0:mailto:bdel0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=df
+ ur0002@student.monash.edu;X-NUM-GUESTS=0:mailto:dfur0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=wm
+ ye0001@student.monash.edu;X-NUM-GUESTS=0:mailto:wmye0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mmar00
+ 79@student.monash.edu;X-NUM-GUESTS=0:mailto:mmar0079@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=scienc
+ e@monashclubs.org;X-NUM-GUESTS=0:mailto:science@monashclubs.org
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bo
+ we0003@student.monash.edu;X-NUM-GUESTS=0:mailto:bowe0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=jhab00
+ 04@student.monash.edu;X-NUM-GUESTS=0:mailto:jhab0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jr
+ ud0005@student.monash.edu;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=amah00
+ 59@student.monash.edu;X-NUM-GUESTS=0:mailto:amah0059@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cj
+ am0016@student.monash.edu;X-NUM-GUESTS=0:mailto:cjam0016@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=br
+ ut0002@student.monash.edu;X-NUM-GUESTS=0:mailto:brut0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lwal00
+ 30@student.monash.edu;X-NUM-GUESTS=0:mailto:lwal0030@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkam00
+ 05@student.monash.edu;X-NUM-GUESTS=0:mailto:jkam0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nelv00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:nelv0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=oa
+ dr0001@student.monash.edu;X-NUM-GUESTS=0:mailto:oadr0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=tg
+ ra0010@student.monash.edu;X-NUM-GUESTS=0:mailto:tgra0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=akau00
+ 31@student.monash.edu;X-NUM-GUESTS=0:mailto:akau0031@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tchi00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:tchi0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ij
+ en0005@student.monash.edu;X-NUM-GUESTS=0:mailto:ijen0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ed
+ av0021@student.monash.edu;X-NUM-GUESTS=0:mailto:edav0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ld
+ av0036@student.monash.edu;X-NUM-GUESTS=0:mailto:ldav0036@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lmcc00
+ 43@student.monash.edu;X-NUM-GUESTS=0:mailto:lmcc0043@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cg
+ er0010@student.monash.edu;X-NUM-GUESTS=0:mailto:cger0010@student.monash.edu
+CREATED:20230325T071135Z
+LAST-MODIFIED:20230330T070545Z
+LOCATION:Monash Clayton - SCOFF
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Committee Meeting (#3)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230809T083000Z
+DTEND:20230809T110000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=katherine.hayeschen@mess.org.au:mailto:katherine.hayeschen@mes
+ s.org.au
+UID:0sourfrsk9mro009ured659u14@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jr
+ ud0005@student.monash.edu;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+X-GOOGLE-CONFERENCE:https://meet.google.com/vab-gcot-xnt
+CREATED:20230807T080435Z
+DESCRIPTION:<br>MESS will be hosting our annual Industry night on the 9th o
+ f August - 𝐨𝐧𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐛𝐢𝐠𝐠𝐞𝐬𝐭 𝐧𝐞𝐭𝐰𝐨𝐫𝐤𝐢𝐧𝐠 𝐞𝐯𝐞𝐧
+ 𝐭𝐬 𝐨𝐟 𝐭𝐡𝐞 𝐲𝐞𝐚𝐫! 💼<br>🛠Industry night is a fantastic opportunit
+ y for all Engineering students to form connections with representatives fro
+ m distinguished companies across an array of fields including engineering\,
+  technology\, consulting\, infrastructure and more\, as well as develop net
+ working skills in a vibrant and comfortable environment. 🛠<br>📝The night 
+ will commence with a range of short presentations by some of our partner co
+ mpanies (to be announced!!) working on exciting and inspiring projects\, pr
+ oviding an insight into advancements in the industry. This will then be fol
+ lowed by more traditional networking in which attendees will be given time 
+ to make meaningful connections with representatives.📝<br>⚙️You don’t want 
+ to miss this unique and valuable opportunity to not only connect with a ran
+ ge of representatives but to also equip yourself with networking and conver
+ sation skills<span>⚙️</span>\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https:
+ //meet.google.com/vab-gcot-xnt\nOr dial: (AU) +61 2 9051 6361 PIN: 20632502
+ 2#\nMore phone numbers: https://tel.meet/vab-gcot-xnt?pin=2256936544276&hs=
+ 7\n\nLearn more about Meet at: https://support.google.com/a/users/answer/92
+ 82720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20230807T080441Z
+LOCATION:Woodside building (G01\, G1.02)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:MESS Industry Night
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230731T090000Z
+DTEND:20230731T100000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=tchi0025@student.monash.edu:mailto:tchi0025@student.monash.edu
+UID:1v8jjvdb8d8tcvhabjr1hroucs@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ak
+ au0031@student.monash.edu;X-NUM-GUESTS=0:mailto:akau0031@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=amah00
+ 59@student.monash.edu;X-NUM-GUESTS=0:mailto:amah0059@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ayel00
+ 06@student.monash.edu;X-NUM-GUESTS=0:mailto:ayel0006@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=bdel00
+ 10@student.monash.edu;X-NUM-GUESTS=0:mailto:bdel0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bowe00
+ 03@student.monash.edu;X-NUM-GUESTS=0:mailto:bowe0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=brut00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:brut0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=cger00
+ 10@student.monash.edu;X-NUM-GUESTS=0:mailto:cger0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=cjam00
+ 16@student.monash.edu;X-NUM-GUESTS=0:mailto:cjam0016@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=cmcc00
+ 18@student.monash.edu;X-NUM-GUESTS=0:mailto:cmcc0018@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=dfer00
+ 30@student.monash.edu;X-NUM-GUESTS=0:mailto:dfer0030@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=dfur00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:dfur0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=djay00
+ 26@student.monash.edu;X-NUM-GUESTS=0:mailto:djay0026@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=edav00
+ 21@student.monash.edu;X-NUM-GUESTS=0:mailto:edav0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=epau00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:epau0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=hriv00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:hriv0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ijen00
+ 05@student.monash.edu;X-NUM-GUESTS=0:mailto:ijen0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ispa00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:ispa0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkam00
+ 05@student.monash.edu;X-NUM-GUESTS=0:mailto:jkam0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=TENTATIVE;CN=jrud0
+ 005@student.monash.edu;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ld
+ av0036@student.monash.edu;X-NUM-GUESTS=0:mailto:ldav0036@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lmcc00
+ 43@student.monash.edu;X-NUM-GUESTS=0:mailto:lmcc0043@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=lw
+ al0030@student.monash.edu;X-NUM-GUESTS=0:mailto:lwal0030@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=mcze00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:mcze0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mm
+ ar0079@student.monash.edu;X-NUM-GUESTS=0:mailto:mmar0079@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mpos00
+ 04@student.monash.edu;X-NUM-GUESTS=0:mailto:mpos0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nelv00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:nelv0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=nw
+ ar0021@student.monash.edu;X-NUM-GUESTS=0:mailto:nwar0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=oadr00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:oadr0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=pdez00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:pdez0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ss
+ on0028@student.monash.edu;X-NUM-GUESTS=0:mailto:sson0028@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tchi00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:tchi0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=wm
+ ye0001@student.monash.edu;X-NUM-GUESTS=0:mailto:wmye0001@student.monash.edu
+CREATED:20230729T042213Z
+DESCRIPTION:Hi there\, \n\nTakudzwa Chitambo is inviting you to a scheduled
+  Zoom meeting. \n\nJoin from a PC\, Mac\, iPad\, iPhone or Android device: 
+ \n\n    Please click this URL to start or join. https://monash.zoom.us/j/82
+ 376879681?pwd=NWlSS0YxRjhmWWd5S28vR0lrWDZVZz09 \n    Or\, go to https://mon
+ ash.zoom.us/join and enter meeting ID: 823 7687 9681  and passcode: 554379\
+ n        Ensure your device has a dedicated microphone and webcam.\n       
+  **Please do not share these details with those not on the participant list
+ **\n\n \nJoin from a dial-in phone: \n\n    Dial: +61 3 990 59666 [+61 3 99
+ 05 ZOOM] or +61 2 8015 2088\n    Meeting ID: 823 7687 9681 \n    Internatio
+ nal numbers available: https://monash.zoom.us/u/kbT79itraL \n\n\nJoin from 
+ a Video capable room system(H.323/SIP): \n\nDial:\n    61262227588 (From wi
+ thin Monash only) \n  or:\n    103.122.166.55 (IP) or\n    zmau.us (Backup)
+ \n\n    Meeting ID: 823 7687 9681 \n    Passcode: 554379\n\n\n=============
+ ===============================\nUse of Zoom is subject to Monash Universit
+ y’s IT <a href="https://www.monash.edu/policy-bank/policies-and-procedures/
+ management/its/Information-Technology-Acceptable-Use-Policy.pdf">Acceptable
+  Use Policy</a>.\n \nFor information relating to the handling of your perso
+ nal information please refer to Monash University’s <a href="https://www.mo
+ nash.edu/__data/assets/pdf_file/0003/790086/Privacy.pdf">Data Protection an
+ d Privacy Procedure</a>.\n \nIf you have any questions about how Monash Uni
+ versity is collecting and handling your personal information\, please conta
+ ct our Data Protection and Privacy Office at dataprotectionofficer@monash.e
+ du.\n============================================
+LAST-MODIFIED:20230907T025947Z
+LOCATION:https://monash.zoom.us/j/82376879681?pwd=NWlSS0YxRjhmWWd5S28vR0lrW
+ DZVZz09
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:MSS Comm meeting
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230913T080000Z
+DTEND:20230913T090000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=tchi0025@student.monash.edu:mailto:tchi0025@student.monash.edu
+UID:jqsj8u9fl1khc3qjchka4h46ec@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ak
+ au0031@student.monash.edu;X-NUM-GUESTS=0:mailto:akau0031@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=am
+ ah0059@student.monash.edu;X-NUM-GUESTS=0:mailto:amah0059@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ayel00
+ 06@student.monash.edu;X-NUM-GUESTS=0:mailto:ayel0006@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=bd
+ el0010@student.monash.edu;X-NUM-GUESTS=0:mailto:bdel0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bowe00
+ 03@student.monash.edu;X-NUM-GUESTS=0:mailto:bowe0003@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=brut00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:brut0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cg
+ er0010@student.monash.edu;X-NUM-GUESTS=0:mailto:cger0010@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cj
+ am0016@student.monash.edu;X-NUM-GUESTS=0:mailto:cjam0016@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=cm
+ cc0018@student.monash.edu;X-NUM-GUESTS=0:mailto:cmcc0018@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=dfer00
+ 30@student.monash.edu;X-NUM-GUESTS=0:mailto:dfer0030@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=dfur00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:dfur0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=djay00
+ 26@student.monash.edu;X-NUM-GUESTS=0:mailto:djay0026@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ed
+ av0021@student.monash.edu;X-NUM-GUESTS=0:mailto:edav0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=epau00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:epau0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=hriv00
+ 02@student.monash.edu;X-NUM-GUESTS=0:mailto:hriv0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ij
+ en0005@student.monash.edu;X-NUM-GUESTS=0:mailto:ijen0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=is
+ pa0002@student.monash.edu;X-NUM-GUESTS=0:mailto:ispa0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jkam00
+ 05@student.monash.edu;X-NUM-GUESTS=0:mailto:jkam0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=jrud00
+ 05@student.monash.edu;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ld
+ av0036@student.monash.edu;X-NUM-GUESTS=0:mailto:ldav0036@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lmcc00
+ 43@student.monash.edu;X-NUM-GUESTS=0:mailto:lmcc0043@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=lwal00
+ 30@student.monash.edu;X-NUM-GUESTS=0:mailto:lwal0030@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mc
+ ze0002@student.monash.edu;X-NUM-GUESTS=0:mailto:mcze0002@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=mm
+ ar0079@student.monash.edu;X-NUM-GUESTS=0:mailto:mmar0079@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mpos00
+ 04@student.monash.edu;X-NUM-GUESTS=0:mailto:mpos0004@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nelv00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:nelv0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nwar00
+ 21@student.monash.edu;X-NUM-GUESTS=0:mailto:nwar0021@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=oadr00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:oadr0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=pdez00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:pdez0001@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ss
+ on0028@student.monash.edu;X-NUM-GUESTS=0:mailto:sson0028@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tchi00
+ 25@student.monash.edu;X-NUM-GUESTS=0:mailto:tchi0025@student.monash.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=wmye00
+ 01@student.monash.edu;X-NUM-GUESTS=0:mailto:wmye0001@student.monash.edu
+CREATED:20230908T141251Z
+DESCRIPTION:Hi there\, \n\nTakudzwa Chitambo is inviting you to a scheduled
+  Zoom meeting. \n\nJoin from a PC\, Mac\, iPad\, iPhone or Android device: 
+ \n\n    Please click this URL to start or join. https://monash.zoom.us/j/85
+ 873493704?pwd=K21mN1RxOXl1TG80U29NN2V6NHlSZz09 \n    Or\, go to https://mon
+ ash.zoom.us/join and enter meeting ID: 858 7349 3704  and passcode: 523849\
+ n        Ensure your device has a dedicated microphone and webcam.\n       
+  **Please do not share these details with those not on the participant list
+ **\n\n \nJoin from a dial-in phone: \n\n    Dial: +61 3 990 59666 [+61 3 99
+ 05 ZOOM] or +61 2 8015 2088\n    Meeting ID: 858 7349 3704 \n    Internatio
+ nal numbers available: https://monash.zoom.us/u/kbMaftufW7 \n\n\nJoin from 
+ a Video capable room system(H.323/SIP): \n\nDial:\n    61262227588 (From wi
+ thin Monash only) \n  or:\n    103.122.166.55 (IP) or\n    zmau.us (Backup)
+ \n\n    Meeting ID: 858 7349 3704 \n    Passcode: 523849\n\n\n=============
+ ===============================\nUse of Zoom is subject to Monash Universit
+ y’s IT <a href="https://www.monash.edu/policy-bank/policies-and-procedures/
+ management/its/Information-Technology-Acceptable-Use-Policy.pdf">Acceptable
+  Use Policy</a>.\n \nFor information relating to the handling of your perso
+ nal information please refer to Monash University’s <a href="https://www.mo
+ nash.edu/__data/assets/pdf_file/0003/790086/Privacy.pdf">Data Protection an
+ d Privacy Procedure</a>.\n \nIf you have any questions about how Monash Uni
+ versity is collecting and handling your personal information\, please conta
+ ct our Data Protection and Privacy Office at dataprotectionofficer@monash.e
+ du.\n============================================
+LAST-MODIFIED:20230913T083912Z
+LOCATION:https://monash.zoom.us/j/85873493704?pwd=K21mN1RxOXl1TG80U29NN2V6N
+ HlSZz09
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:MSS Comm meeting
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231116T090000Z
+DTEND:20231116T140000Z
+DTSTAMP:20231129T000301Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9t0von89fp03ks2tmq2oiuofdug96nnnnj38fl6vsq2dcaiqsfpu20
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Jonah 
+ Rudzki;X-NUM-GUESTS=0:mailto:jrud0005@student.monash.edu
+CLASS:PRIVATE
+CREATED:20231109T020014Z
+DESCRIPTION:EOX 2023 (SAS\, MSS\, MESS)\nSub Club\, Flinders Court\, Melbou
+ rne\, Victoria\, 3000\, Australia\n\nConfirmation number: R5A4A1KP
+LAST-MODIFIED:20231109T020014Z
+LOCATION:Sub Club\, Flinders Court\, Melbourne\, Victoria\, 3000\, Australi
+ a
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:EOX 2023 (SAS\, MSS\, MESS)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231126T010000Z
+DTEND:20231126T020000Z
+DTSTAMP:20231129T000301Z
+UID:18j60rlp1c9mn055pnka8bum54@google.com
+CREATED:20231129T000237Z
+LAST-MODIFIED:20231129T000237Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:test
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231130T023000Z
+DTEND:20231130T033000Z
+DTSTAMP:20231129T000301Z
+UID:4nvve96bis52rm46knoavp31tn@google.com
+CREATED:20231129T000241Z
+LAST-MODIFIED:20231129T000241Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:test 2
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20231201T213000Z
+DTEND:20231201T223000Z
+DTSTAMP:20231129T000301Z
+UID:7df2umfrbp6ta4nr41892mt0hf@google.com
+CREATED:20231129T000245Z
+LAST-MODIFIED:20231129T000245Z
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:test 3
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

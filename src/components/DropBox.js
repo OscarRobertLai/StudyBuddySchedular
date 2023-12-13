@@ -1,10 +1,11 @@
 import EventBST from "../utils/EventBST";
 
 
-const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, binarySearchTree, setBinarySearchTree}) => 
+
+const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles, uniqueFileName, setUniqueFileName, binarySearchTree, setBinarySearchTree }) => 
 {
-  function convertToDate(str) 
-  {
+    function convertToDate(str) {
+
       // Extract components from the string
       const year = parseInt(str.substring(0, 4), 10);
       const month = parseInt(str.substring(4, 6), 10) - 1; // Month is 0-indexed in JavaScript
@@ -42,6 +43,7 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, binarySearchTre
           end: dtEndValue
         }
 
+
         bst.insert(convertedEvent);
         events.push(convertedEvent);
         currentEvent = null;
@@ -67,6 +69,23 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, binarySearchTre
       const parsedEvents = parseICS(content);
       setEvents([...events, ...parsedEvents]);
       console.log('Parsed Events: ', parsedEvents);
+      
+    // Handler for reading and parsing ICS file content
+    const readFileContent = (file) => {
+      if (!uniqueFileName.includes(file.name)) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          const content = e.target.result;
+          const parsedEvents = parseICS(content);
+          setEvents([...events, parsedEvents]);
+          setUniqueFileName([...uniqueFileName, file.name])
+          console.log('Parsed Events: ', parsedEvents);
+          console.log('Events: ', events);
+        };
+        reader.readAsText(file);
+      } else {
+        console.log('file already exists')
+      }
     };
 
     reader.readAsText(file);
@@ -100,6 +119,8 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, binarySearchTre
         {
           const file = event.dataTransfer.items[i].getAsFile();
           console.log('File name: ', file.name);
+          const droppedFiles = Array.from(event.dataTransfer.files);
+          setFiles([...files, file]);
           readFileContent(file);
         }
       }
@@ -123,6 +144,18 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, binarySearchTre
         onDragLeave={dragLeaveHandler}
         className={`drop-zone ${isDragOver ? 'drop-zone-drag-over' : ''}`}>
         <p>Drag one or more files to this <i>drop zone</i>.</p>
+        
+        {files.map((file) => (
+          <div key={file.name} style={{ margin: '2px' , display: 'inline-block' }}>
+            <img
+              src="/calendar.png"
+              alt={file.name}
+              style={{ maxWidth: '100%', maxHeight: '70px', marginBottom: '5px' }}
+            />
+            <p>{file.name}</p>
+          </div>
+        ))}
+
       </div>
     </div>
   );

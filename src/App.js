@@ -12,16 +12,24 @@ export default function App ()
   const [events, setEvents] = useState([]);
   const [binarySearchTree, setBinarySearchTree] = useState();
   const [freeSlots, setFreeSlots] = useState([]);
+  const [epochTimes, setEpochTimes] = useState([]);
+  const [files, setFiles] = useState([]);
+
+
   
     return (
       <div>
-        <DropBox 
+        <DropBox  
           events={events}
           setEvents={setEvents}
           isDragOver={isDragOver}
           setIsDragOver={setIsDragOver}
           binarySearchTree={binarySearchTree}
           setBinarySearchTree={setBinarySearchTree}
+          uniqueFileName={uniqueFileName}
+          setUniqueFileName={setUniqueFileName}
+          files={files}
+          setFiles={setFiles}
         />
         <MyCalendarComponent 
         selected={selected}
@@ -30,6 +38,10 @@ export default function App ()
         binarySearchTree={binarySearchTree}
         freeSlots={freeSlots}
         setFreeSlots={setFreeSlots}
+        events={events.flatMap(list => list)}
+        groupedEvents={events}
+        epochTimes={epochTimes}
+        setEpochTimes={setEpochTimes}
         />
         <UserTable />
       </div>
