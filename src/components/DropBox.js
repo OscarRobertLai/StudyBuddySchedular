@@ -1,6 +1,11 @@
-const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles, uniqueFileName, setUniqueFileName }) => 
+import EventBST from "../utils/EventBST";
+
+
+
+const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles, uniqueFileName, setUniqueFileName, binarySearchTree, setBinarySearchTree }) => 
 {
     function convertToDate(str) {
+
       // Extract components from the string
       const year = parseInt(str.substring(0, 4), 10);
       const month = parseInt(str.substring(4, 6), 10) - 1; // Month is 0-indexed in JavaScript
@@ -13,35 +18,58 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
       return new Date(year, month, day, hours, minutes, seconds);
   }
 
-    const parseICS = (data) => {
-      const events = [];
-      const lines = data.split(/\r\n|\n|\r/);
-      let currentEvent = null;
+  const parseICS = (data) => 
+  {
+    const bst = new EventBST();
+    const events = [];
+    const lines = data.split(/\r\n|\n|\r/);
+    let currentEvent = null;
 
-      lines.forEach(line => {
-        if (line.startsWith('BEGIN:VEVENT')) {
-          currentEvent = {};
-        } else if (line.startsWith('END:VEVENT')) {
-          const dtStartValue = convertToDate(currentEvent["DTSTART;TZID=Australia/Melbourne"]);
-          const dtEndValue = convertToDate(currentEvent["DTEND;TZID=Australia/Melbourne"]);
+    lines.forEach(line => 
+      {
+      if (line.startsWith('BEGIN:VEVENT')) 
+      {
+        currentEvent = {};
+      } 
+      else if (line.startsWith('END:VEVENT')) 
+      {
+        const dtStartValue = convertToDate(currentEvent["DTSTART;TZID=Australia/Melbourne"]);
+        const dtEndValue = convertToDate(currentEvent["DTEND;TZID=Australia/Melbourne"]);
 
-          const convertedEvent = {
-            title: currentEvent.DESCRIPTION,
-            start: dtStartValue,
-            end: dtEndValue
-          }
-          
-          events.push(convertedEvent);
-          currentEvent = null;
-        } else if (currentEvent) {
-          const [key, value] = line.split(':');
-          currentEvent[key] = value;
+        const convertedEvent = 
+        {
+          title: currentEvent.DESCRIPTION,
+          start: dtStartValue,
+          end: dtEndValue
         }
-        
-      });
-      return events;
-    };
 
+
+        bst.insert(convertedEvent);
+        events.push(convertedEvent);
+        currentEvent = null;
+      } 
+      else if (currentEvent) 
+      {
+        const [key, value] = line.split(':');
+        currentEvent[key] = value;
+      }
+    });
+    setBinarySearchTree(bst);
+    console.log("BINARY SEARCH TREE", bst)
+    return events;
+  };
+
+  // Handler for reading and parsing ICS file content
+  const readFileContent = (file) => 
+  {
+    const reader = new FileReader();
+    reader.onload = (e) => 
+    {
+      const content = e.target.result;
+      const parsedEvents = parseICS(content);
+      setEvents([...events, ...parsedEvents]);
+      console.log('Parsed Events: ', parsedEvents);
+      
     // Handler for reading and parsing ICS file content
     const readFileContent = (file) => {
       if (!uniqueFileName.includes(file.name)) {
@@ -59,17 +87,22 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
         console.log('file already exists')
       }
     };
+
+    reader.readAsText(file);
+  };
   
-    // Update the drag over handler
-    const dragOverHandler = (event) => {
-      event.preventDefault();
-      setIsDragOver(true); // Change background color when item is dragged over
-    };
+  // Update the drag over handler
+  const dragOverHandler = (event) => 
+  {
+    event.preventDefault();
+    setIsDragOver(true); // Change background color when item is dragged over
+  };
   
-    // Handler for when the dragged item leaves the drop zone
-    const dragLeaveHandler = () => {
-      setIsDragOver(false); // Reset background color when item leaves the drop zone
-    };
+  // Handler for when the dragged item leaves the drop zone
+  const dragLeaveHandler = () => 
+  {
+    setIsDragOver(false); // Reset background color when item leaves the drop zone
+  };
   
   // Handler for dropping files
   const dropHandler = (event) => 
@@ -78,9 +111,12 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
     setIsDragOver(false); // Reset background color when file is dropped
 
     // Looping through each file and outputting to the console for now
-    if (event.dataTransfer.items) {
-      for (let i = 0; i < event.dataTransfer.items.length; i++) {
-        if (event.dataTransfer.items[i].kind === 'file') {
+    if (event.dataTransfer.items) 
+    {
+      for (let i = 0; i < event.dataTransfer.items.length; i++) 
+      {
+        if (event.dataTransfer.items[i].kind === 'file') 
+        {
           const file = event.dataTransfer.items[i].getAsFile();
           console.log('File name: ', file.name);
           const droppedFiles = Array.from(event.dataTransfer.files);
@@ -88,9 +124,11 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
           readFileContent(file);
         }
       }
-      console.log('FILES: ', files)
-    } else {
-      for (let i = 0; i < event.dataTransfer.files.length; i++) {
+    } 
+    else 
+    {
+      for (let i = 0; i < event.dataTransfer.files.length; i++) 
+      {
         console.log('File name: ', event.dataTransfer.files[i].name);
         readFileContent(event.dataTransfer.files[i]);
       }

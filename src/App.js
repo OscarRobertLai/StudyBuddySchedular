@@ -1,19 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import MyCalendarComponent from "./components/Calendar";
 import UserTable from "./components/DataTable";
 import DropBox from "./components/DropBox"
-import TestButton from './components/TestButton';
 
 
-export default function App (){ 
+export default function App ()
+{ 
   const [selected, setSelected] = useState();
   const [isDragOver, setIsDragOver] = useState(false); // State to track drag over status
   const [events, setEvents] = useState([]);
-  const [uniqueEvents, setUnqiueEvents] = useState([]);
+  const [binarySearchTree, setBinarySearchTree] = useState();
+  const [freeSlots, setFreeSlots] = useState([]);
   const [epochTimes, setEpochTimes] = useState([]);
   const [files, setFiles] = useState([]);
-  const [uniqueFileName, setUniqueFileName] = useState([]);
+
 
   
     return (
@@ -23,21 +24,20 @@ export default function App (){
           setEvents={setEvents}
           isDragOver={isDragOver}
           setIsDragOver={setIsDragOver}
-          uniqueEvents={uniqueEvents}
-          setUnqiueEvents={setUnqiueEvents} 
+          binarySearchTree={binarySearchTree}
+          setBinarySearchTree={setBinarySearchTree}
           uniqueFileName={uniqueFileName}
           setUniqueFileName={setUniqueFileName}
           files={files}
           setFiles={setFiles}
         />
-        <TestButton 
-          uniqueEvents={uniqueEvents}
-          setUnqiueEvents={setUnqiueEvents}
-          events={events}
-        />
         <MyCalendarComponent 
         selected={selected}
         setSelected={setSelected}
+        events={events}
+        binarySearchTree={binarySearchTree}
+        freeSlots={freeSlots}
+        setFreeSlots={setFreeSlots}
         events={events.flatMap(list => list)}
         groupedEvents={events}
         epochTimes={epochTimes}
@@ -47,5 +47,6 @@ export default function App (){
       </div>
     );
 
+  
   }
 
