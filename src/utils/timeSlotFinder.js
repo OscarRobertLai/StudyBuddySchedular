@@ -1,57 +1,30 @@
-
-
-const timeSlotFinder = (binarySearchTree, selectedStart, selectedEnd) => 
+function findFreeSlots(start, end, events) 
 {
-    const initialEvent = binarySearchTree.findClosestLargerStart(selectedStart)
-    const pot = binarySearchTree.findClosestSmallerStart(selectedStart)
-    // console.log("GG", pot)
+    // Sort events by their start time
+    events.sort((a, b) => a.start - b.start);
 
-    if (initialEvent !== null){
-        let eventsList = timeSlotFinderAux(binarySearchTree, initialEvent.value.start, selectedEnd, [])
-        // console.log("SELECTED START,", selectedStart)
-        // console.log("NEXT START,", pot.value)
-        if (initialEvent.value.start <= selectedEnd){
-            // console.log("1")
-            eventsList.unshift(initialEvent)    
+    let freeSlots = [];
+    let currentStart = start;
+
+    for (let event of events) 
+    {
+        // If the current event starts after our current start time
+        if (event.start > currentStart) 
+        {
+            // Add the time slot to the free slots
+            freeSlots.push({ start: currentStart, end: event.start });
         }
-        if (pot.value.end > selectedStart){
-            // console.log("2")
-            eventsList.unshift(pot)
-        }
-
-        console.log("EVENTS BETWEEN SELECTED:", eventsList)
-
-        eventsList.forEach((event) => {
-            // Do something with each event
-        });
+        // Update currentStart to be the later of the event's end or the current start time
+        currentStart = new Date(Math.max(currentStart, event.end));
     }
 
+    // If there's still time after the last event, add that time slot
+    if (currentStart < end) 
+    {
+        freeSlots.push({ start: currentStart, end: end });
+    }
+
+    return freeSlots;
 }
 
-const timeSlotFinderAux = (binarySearchTree, searchStart, selectedEnd, currentEvents) => 
-{
-
-    const nextEvent = binarySearchTree.findClosestLargerStart(searchStart)
-    console.log("NEXT", nextEvent)
-    if (nextEvent === null)
-    {
-        return currentEvents
-    }
-    if (nextEvent.value.start > selectedEnd) 
-    {
-        console.log("HIT BOTTOM", nextEvent)
-        const cats = binarySearchTree.findClosestLargerStart(nextEvent.value.start)
-        console.log("Çurr", currentEvents)
-        console.log("cats", cats)
-        return currentEvents
-    } else
-    {
-        currentEvents.push(nextEvent)
-        const eventsList = timeSlotFinderAux(binarySearchTree, nextEvent.value.start, selectedEnd, currentEvents)
-        return eventsList
-    }
-
-}
-
-// Returns the number of
-export default timeSlotFinder;
+export default findFreeSlots;
