@@ -1,11 +1,18 @@
 import EventBST from "../utils/EventBST";
+import React, { useEffect } from 'react';
 
 
-
-const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles, uniqueFileName, setUniqueFileName, binarySearchTree, setBinarySearchTree }) => 
+const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles, uniqueFileName, setUniqueFileName, setBinarySearchTree }) => 
 {
-    function convertToDate(str) {
+  useEffect(() => {
+    // This code will run every time `files` changes
+    console.log('Files changed:', files);
 
+  }, [files]); // Dependency array includes 'files', so the effect runs when 'files' changes
+
+
+    function convertToDate(str) 
+    {
       // Extract components from the string
       const year = parseInt(str.substring(0, 4), 10);
       const month = parseInt(str.substring(4, 6), 10) - 1; // Month is 0-indexed in JavaScript
@@ -43,7 +50,6 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
           end: dtEndValue
         }
 
-
         bst.insert(convertedEvent);
         events.push(convertedEvent);
         currentEvent = null;
@@ -54,42 +60,35 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
         currentEvent[key] = value;
       }
     });
+
     setBinarySearchTree(bst);
     console.log("BINARY SEARCH TREE", bst)
     return events;
-  };
+  }
 
-  // Handler for reading and parsing ICS file content
-  const readFileContent = (file) => 
+// Handler for reading and parsing ICS file content
+const readFileContent = (file) => {
+  if (!uniqueFileName.includes(file.name)) 
   {
     const reader = new FileReader();
     reader.onload = (e) => 
     {
       const content = e.target.result;
       const parsedEvents = parseICS(content);
-      setEvents([...events, ...parsedEvents]);
+      setEvents([...events, parsedEvents]);
+      setUniqueFileName([...uniqueFileName, file.name])
       console.log('Parsed Events: ', parsedEvents);
-      
-    // Handler for reading and parsing ICS file content
-    const readFileContent = (file) => {
-      if (!uniqueFileName.includes(file.name)) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          const content = e.target.result;
-          const parsedEvents = parseICS(content);
-          setEvents([...events, parsedEvents]);
-          setUniqueFileName([...uniqueFileName, file.name])
-          console.log('Parsed Events: ', parsedEvents);
-          console.log('Events: ', events);
-        };
-        reader.readAsText(file);
-      } else {
-        console.log('file already exists')
-      }
+      console.log('Events: ', events);
     };
-
     reader.readAsText(file);
-  };
+  } 
+  else 
+  {
+    console.log('file already exists')
+  }
+};
+
+
   
   // Update the drag over handler
   const dragOverHandler = (event) => 
@@ -120,7 +119,9 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
           const file = event.dataTransfer.items[i].getAsFile();
           console.log('File name: ', file.name);
           const droppedFiles = Array.from(event.dataTransfer.files);
+          console.log("SETTING FILES", file)
           setFiles([...files, file]);
+          console.log("FILE: ", files)
           readFileContent(file);
         }
       }
