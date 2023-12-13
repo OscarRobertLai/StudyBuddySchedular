@@ -49,10 +49,10 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
         reader.onload = (e) => {
           const content = e.target.result;
           const parsedEvents = parseICS(content);
-          setEvents([...events, [files.length,parsedEvents]]);
+          setEvents([...events, parsedEvents]);
           setUniqueFileName([...uniqueFileName, file.name])
           console.log('Parsed Events: ', parsedEvents);
-          console.log('Events: ', events); // WORK FROM HERE
+          console.log('Events: ', events);
         };
         reader.readAsText(file);
       } else {
