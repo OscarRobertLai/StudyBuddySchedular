@@ -12,7 +12,6 @@ const CalendarComponent = ({ events, groupedEvents, selected, setSelected, epoch
     const eventPropGetter = (event) => {
         // Find the category (file) index for the current event
         const categoryIndex = groupedEvents.findIndex((category) => category.includes(event));
-        console.log(categoryIndex);
 
         // Set a default color if the category index is not found
         const backgroundColor = getCategoryColor(categoryIndex);
