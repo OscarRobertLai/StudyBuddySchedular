@@ -25,6 +25,7 @@ export default function App ()
           setIsDragOver={setIsDragOver}
           setBinarySearchTree={setBinarySearchTree}
           uniqueFileName={uniqueFileName}
+          binarySearchTree={binarySearchTree}
           setUniqueFileName={setUniqueFileName}
           files={files}
           setFiles={setFiles}

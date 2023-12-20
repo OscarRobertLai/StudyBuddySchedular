@@ -2,14 +2,8 @@ import EventBST from "../utils/EventBST";
 import React, { useEffect } from 'react';
 
 
-const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles, uniqueFileName, setUniqueFileName, setBinarySearchTree }) => 
+const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles, uniqueFileName, setUniqueFileName, setBinarySearchTree, binarySearchTree }) => 
 {
-  useEffect(() => {
-    // This code will run every time `files` changes
-    console.log('Files changed:', files);
-
-  }, [files]); // Dependency array includes 'files', so the effect runs when 'files' changes
-
 
     function convertToDate(str) 
     {
@@ -27,7 +21,16 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
 
   const parseICS = (data) => 
   {
-    const bst = new EventBST();
+    let bst = null
+    if (!binarySearchTree)
+    {
+      bst = new EventBST();
+    }
+    else
+    {
+      bst = binarySearchTree
+    }
+
     const events = [];
     const lines = data.split(/\r\n|\n|\r/);
     let currentEvent = null;
@@ -53,6 +56,7 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
         bst.insert(convertedEvent);
         events.push(convertedEvent);
         currentEvent = null;
+        setBinarySearchTree(bst);
       } 
       else if (currentEvent) 
       {
@@ -61,7 +65,7 @@ const DropBox = ({ events, setEvents, isDragOver, setIsDragOver, files, setFiles
       }
     });
 
-    setBinarySearchTree(bst);
+
     console.log("BINARY SEARCH TREE", bst)
     return events;
   }
@@ -76,9 +80,9 @@ const readFileContent = (file) => {
       const content = e.target.result;
       const parsedEvents = parseICS(content);
       setEvents([...events, parsedEvents]);
+      
       setUniqueFileName([...uniqueFileName, file.name])
       console.log('Parsed Events: ', parsedEvents);
-      console.log('Events: ', events);
     };
     reader.readAsText(file);
   } 
@@ -119,9 +123,7 @@ const readFileContent = (file) => {
           const file = event.dataTransfer.items[i].getAsFile();
           console.log('File name: ', file.name);
           const droppedFiles = Array.from(event.dataTransfer.files);
-          console.log("SETTING FILES", file)
           setFiles([...files, file]);
-          console.log("FILE: ", files)
           readFileContent(file);
         }
       }
@@ -130,7 +132,7 @@ const readFileContent = (file) => {
     {
       for (let i = 0; i < event.dataTransfer.files.length; i++) 
       {
-        console.log('File name: ', event.dataTransfer.files[i].name);
+        // console.log('File name: ', event.dataTransfer.files[i].name);
         readFileContent(event.dataTransfer.files[i]);
       }
     }
